@@ -82,17 +82,9 @@ plugins:
         module_name: ../include/main
 nav:
     - Overview: index.md
-    - Incubators: incubators.md
-    - Architecture: architecture.md
-    - Attributes: attributes.md
-    - Authorisation: authorisation.md
-    - Assurance Details: assurance.md
-    - Community AAI Software: community-aai-software.md
-    - Community AAI Test Instances: community-aai-test-instances.md
-    - Community AAI Usage - NFDI Consortia Map: consortia.md
-    - Policies: policies.md
-    - FAQ: faq_ENG.md
-    - FAQ (de): faq.md
-    - Publications and Downloads: presentations.md
-    - Authors: authors.md
-    - Contact: documents_contact.md
+    - About: about.md
+    - News: news.md
+    - Publications: publications.md
+    - Docs: docs.md
+    - Events: events.md
+    - People: people.md
