@@ -1,0 +1,8 @@
+mkdocs
+mkdocs-material
+mkdocs-awesome-pages-plugin
+mkdocs-exclude
+mkdocs-git-revision-date-plugin
+mkdocs-macros-plugin
+mkdocs-material-extensions
+pygit2
