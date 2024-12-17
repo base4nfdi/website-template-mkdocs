@@ -1,0 +1,98 @@
+site_name: TODO4NFDI Documentation
+site_dir: /tmp/nfdi-aai-doc
+docs_dir: ../docs
+repo_url: https://github.com/base4nfdi/website-template-mkdocs
+repo_name: "Base4NFDI mkdocs template"
+edit_uri_template: '-/edit/main/{path}'
+extra_css:
+    - stylesheets/extra.css
+footer:
+    copyright: "&copy 2024 TODO4NFDI, <a href='https://base4nfdi.de/'>Base4NFDI</a>"
+    lines: 
+        - "Partially funded by DFG as part of NFDI."
+        - "Grant Number 521466146"
+    links:
+        - name: Contact
+          link: https://contact.example
+        - name: Legal Notice
+          link: https://legal.example
+        - name: Privacy Policy
+          link: https://privacypolicy.example
+    license:
+        description: This documentation is licensed under CC BY-SA 4.0
+        link: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+        logo: /images/cc-by-sa_icon.png
+
+theme:
+    name: material
+    hightlightjs: true
+    navigation_depth: 2
+    logo: images/Logo_IAM4NFDI_white_nfdi_rgb.png
+    custom_dir: ../overrides/
+    features:
+        #- navigation.tabs
+        #- navigation.tabs.sticky
+        - navigation.instant
+        #- navigation.tracking
+        #- navigation.indexes
+        #- navigation.top
+        - toc.integrate
+        - search.suggest
+        - content.action.edit
+    palette:
+        - scheme: default
+          toggle:
+            icon: material/lightbulb
+            name: Switch to dark mode
+        - scheme: slate
+          toggle:
+            icon: material/lightbulb-outline
+            name: Switch to light mode
+markdown_extensions:
+    - smarty
+    - toc:
+          baselevel: 1
+          permalink: "#"
+          toc_depth: 3
+    - admonition
+    - def_list
+    - pymdownx.details
+    - pymdownx.superfences
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+extra:
+    generator: false
+    social:
+      - icon: fontawesome/brands/github
+        link: https://codebase.helmholtz.cloud/m-team/nfdi/nfdi-aai-doc/
+    # social:
+    #   - icon: images/cc-by-sa_icon.png
+    #     link: https://codebase.helmholtz.cloud/m-team/nfdi/nfdi-aai-doc/
+plugins:
+    - exclude:
+          glob:
+              - googledocs/*
+    - search
+    - awesome-pages
+    # - git-revision-date-localized
+    - macros:
+        include_dir: ../include
+        module_name: ../include/main
+nav:
+    - Overview: index.md
+    - Incubators: incubators.md
+    - Architecture: architecture.md
+    - Attributes: attributes.md
+    - Authorisation: authorisation.md
+    - Assurance Details: assurance.md
+    - Community AAI Software: community-aai-software.md
+    - Community AAI Test Instances: community-aai-test-instances.md
+    - Community AAI Usage - NFDI Consortia Map: consortia.md
+    - Policies: policies.md
+    - FAQ: faq_ENG.md
+    - FAQ (de): faq.md
+    - Publications and Downloads: presentations.md
+    - Authors: authors.md
+    - Contact: documents_contact.md
