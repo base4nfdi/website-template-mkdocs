@@ -4,7 +4,6 @@
 
 ## Local development
 Clone the repository via git, either via ssh or via https:
-```
 
 Install the requirements via python.
 ```bash
