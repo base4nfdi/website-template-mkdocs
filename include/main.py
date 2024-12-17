@@ -10,5 +10,5 @@ def define_env(env):
     gitbranchname = head.shorthand
 
     env.variables.gitbranch = os.environ.get('CI_COMMIT_BRANCH', gitbranchname)
-    env.variables.gitdefaultbranch = os.environ.get('CI_DEFAULT_BRANCH', "master")
+    env.variables.gitdefaultbranch = os.environ.get('CI_DEFAULT_BRANCH', "main")
 
