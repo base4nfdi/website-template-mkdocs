@@ -2,12 +2,13 @@
 
 # Documentation
 
-## Title 1
+## Getting Started
 
-..
+To get started, follow these simple steps:
 
-### Title 2
+1. Install the required dependencies.
+2. Set up your project using the provided templates.
+3. Start building your application.
 
-..
 
 {% include 'gitinfo.md' %}
