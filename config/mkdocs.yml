@@ -21,7 +21,7 @@ footer:
     license:
         description: This documentation is licensed under CC BY-SA 4.0
         link: https://creativecommons.org/licenses/by-sa/4.0/legalcode
-        logo: /images/cc-by-sa_icon.png
+        logo: ../images/cc-by-sa_icon.png
 
 theme:
     name: material
