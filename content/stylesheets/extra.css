@@ -120,14 +120,7 @@ footer a:hover {
     width: 100%;
     height: auto;
     border-radius: 50%; /* Circular image */
-    border: 3px solid #ddd;
-    margin-bottom: 10px;
-  }
-  
-  /* Team member name */
-  .team-member h3 {
-    font-size: 1.2em;
-    margin: 5px 0;
+    border: 20px solid transparent;
   }
   
   /* Email link styling */
