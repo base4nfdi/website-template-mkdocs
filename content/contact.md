@@ -3,8 +3,9 @@
 # Contact
 
 ## Write to us!
-email@email.com
+You can contact the team via :envelope: email@example.com
 
 ## Mailinglist
+Subscribe to the mailing list xyz@example.com.
 
 {% include 'gitinfo.md' %}
