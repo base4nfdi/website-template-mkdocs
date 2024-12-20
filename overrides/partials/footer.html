@@ -73,7 +73,7 @@
         </nav>
         <div class="footer-license footer-textstyle">
             {% set link = config.footer.license.link %}
-            {% set logo = config.footer.license.logo %}
+            {% set logo = config.site_url + '/' + config.footer.license.logo %}
             {% set description = config.footer.license.description %}
             <p style="font-size: .8rem; margin-right: 20px;">{{ description }}</p>
             <a href="{{ link }}" target="_blank" rel="noopener">
