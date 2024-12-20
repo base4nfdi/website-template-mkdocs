@@ -123,12 +123,6 @@ footer a:hover {
     border: 20px solid transparent;
   }
   
-  /* Email link styling */
-  .team-member a {
-    color: #007acc; /* Link color */
-    text-decoration: none;
-  }
-  
   .team-member a:hover {
     text-decoration: underline;
   }
