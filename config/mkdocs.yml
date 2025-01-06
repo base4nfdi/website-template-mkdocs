@@ -14,11 +14,11 @@ footer:
         - "Grant Number 521466146"
     links:
         - name: Contact
-          link: https://contact.example
+          link: https://base4nfdi.github.io/website-template-mkdocs/contact/
         - name: Legal Notice
-          link: https://legal.example
+          link: https://base4nfdi.github.io/website-template-hugo/imprint/
         - name: Privacy Policy
-          link: https://privacypolicy.example
+          link: https://base4nfdi.github.io/website-template-hugo/privacy/
     license:
         description: This documentation is licensed under CC BY-SA 4.0
         link: https://creativecommons.org/licenses/by-sa/4.0/legalcode
