@@ -1,0 +1,165 @@
+:root > * {
+    --md-primary-fg-color: #45546b;
+    --md-footer-bg-color: #45546b;
+    --md-footer-bg-color--dark: #45546b;
+    --md-typeset-a-color: #0abaf0;
+
+/* Accent color shades to side nav */
+    --md-accent-fg-color: #0abaf0;
+
+}
+
+/* Links globally */
+a {
+    text-decoration: none; /* Default behavior */
+  }
+  
+  /* Links in the content */
+  .md-typeset a:hover {
+    text-decoration: underline; /* Add underline on hover for content links */
+  }
+  
+  /* Side navigation links */
+  .md-nav__link {
+    text-decoration: none !important; /* Ensure no underline in the nav */
+  }
+
+footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer a {
+    color: #0abaf0 !important;
+}
+
+footer a:hover {
+    color: white !important;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin-right: 20px;
+    }
+}
+
+.footer-license {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.footer-textstyle {
+    text-align: center;
+    font-size: .6rem;
+    line-height: 1.6;
+    color: var(--md-footer-fg-color--light);
+}
+
+.md-typeset thead th {
+    background-color: #ecf3ff; /*rgba(69, 84, 107, 0.5);*/
+    color: black;
+    font-size: 0.74rem;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    font-style: normal;
+  }
+
+  /* Change the background and border color of "info" admonition boxes */
+.md-typeset .admonition.info {
+    border: 1.5px solid #0abaf0; /* NFDI blau */
+  }
+
+  /* Change the background color of the title area for "info" admonitions */
+.md-typeset .admonition.info .admonition-title {
+    background-color: #d7f6ff; /* NFDI blau getönt */
+    font-weight: bold;
+  }
+
+  /* Change the background and border color of "note" admonition boxes */
+  .md-typeset .admonition.note {
+    border: 1.5px solid #0abaf0; /* NFDI blau */
+  }
+
+  /* Change the background color of the title area for "note" admonitions */
+.md-typeset .admonition.note .admonition-title {
+    background-color: #d7f6ff; /* NFDI blau getönt */
+    font-weight: bold;
+  }
+
+
+/* Container for the team members */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Individual team member card */
+  .team-member {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  /* Team member photo */
+  .team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    border: 20px solid transparent;
+  }
+  
+  .team-member a:hover {
+    text-decoration: underline;
+  }
+
+
+
+/* Remove height limit from the side navigation */
+.md-nav {
+    max-height: none; /* Remove any max-height constraint */
+  }
+  
+
+
+
+/* Event page style */
+.event-header {
+    background-color: #45546b;
+    color: #ecf0f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.event-schedule {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.event-schedule th, .event-schedule td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.event-schedule th {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+.event-schedule tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
