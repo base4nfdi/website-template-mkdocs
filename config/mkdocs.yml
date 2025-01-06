@@ -1,6 +1,6 @@
 site_name: TODO4NFDI Documentation
 site_dir: /tmp/todo4nfdi-doc
-#site_url: http://localhost:8000/base-template
+site_url: https://base4nfdi.github.io/website-template-mkdocs
 docs_dir: ../content
 repo_url: https://github.com/base4nfdi/website-template-mkdocs
 repo_name: "Base4NFDI mkdocs template"
