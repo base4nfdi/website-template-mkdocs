@@ -6,7 +6,7 @@ repo_url: https://github.com/base4nfdi/website-template-mkdocs
 repo_name: "Base4NFDI mkdocs template"
 edit_uri_template: '-/edit/main/{path}'
 extra_css:
-  - stylesheets/extra.css
+    - stylesheets/extra.css
 footer:
     copyright: "&copy 2024 TODO4NFDI, <a href='https://base4nfdi.de/'>Base4NFDI</a>"
     lines: 
