@@ -5,25 +5,9 @@ docs_dir: ../content
 repo_url: https://github.com/base4nfdi/website-template-mkdocs
 repo_name: "Base4NFDI mkdocs template"
 edit_uri_template: '-/edit/main/{path}'
+
 extra_css:
     - stylesheets/extra.css
-footer:
-    copyright: "&copy 2024 TODO4NFDI, <a href='https://base4nfdi.de/'>Base4NFDI</a>"
-    lines: 
-        - "Partially funded by DFG as part of NFDI."
-        - "Grant Number 521466146"
-    links:
-        - name: Contact
-          link: https://base4nfdi.github.io/website-template-mkdocs/contact/
-        - name: Legal Notice
-          link: https://base4nfdi.github.io/website-template-hugo/imprint/
-        - name: Privacy Policy
-          link: https://base4nfdi.github.io/website-template-hugo/privacy/
-    license:
-        description: This documentation is licensed under CC BY-SA 4.0
-        link: https://creativecommons.org/licenses/by-sa/4.0/legalcode
-        logo: images/cc-by-sa_icon.png
-
 theme:
     name: material
     hightlightjs: true
@@ -54,6 +38,34 @@ theme:
           toggle:
             icon: material/lightbulb-outline
             name: Switch to light mode
+
+extra:
+    generator: false
+    social:
+      - icon: fontawesome/brands/github
+        link: https://github.com/base4nfdi/website-template-mkdocs
+    # social:
+    #   - icon: images/cc-by-sa_icon.png
+    #     link: https://codebase.helmholtz.cloud/m-team/nfdi/nfdi-aai-doc/
+    footer:
+      copyright: "&copy 2024 TODO4NFDI, <a href='https://base4nfdi.de/'>Base4NFDI</a>"
+      lines: 
+          - "Partially funded by DFG as part of NFDI."
+          - "Grant Number 521466146"
+      links: # can be relative or absolute. Relative links will be prepended the site_url value
+          - name: Contact
+            link: /contact/
+          - name: Imprint
+            link: /imprint/
+          - name: Privacy Policy
+            link: /privacy/
+          - name: Accessibility
+            link: /accessibility/
+      license:
+          description: This documentation is licensed under CC BY-SA 4.0
+          link: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+          logo: images/cc-by-sa_icon.png
+
 markdown_extensions:
     - smarty
     - toc:
@@ -72,14 +84,6 @@ markdown_extensions:
     - pymdownx.tabbed:
         alternate_style: true
 
-extra:
-    generator: false
-    social:
-      - icon: fontawesome/brands/github
-        link: https://github.com/base4nfdi/website-template-mkdocs
-    # social:
-    #   - icon: images/cc-by-sa_icon.png
-    #     link: https://codebase.helmholtz.cloud/m-team/nfdi/nfdi-aai-doc/
 plugins:
     - exclude:
           glob:
@@ -99,3 +103,14 @@ nav:
     - Events: events.md
     - People: people.md
     - Contact: contact.md
+
+not_in_nav: |
+  accessibility.md
+  imprint.md
+  privacy.md
+
+validation: #recommended mkdocs validation settings 
+  omitted_files: warn 
+  absolute_links: warn 
+  unrecognized_links: warn 
+  anchors: warn
