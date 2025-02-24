@@ -44,30 +44,26 @@
     {% endif %}
     <div class="md-footer-meta md-typeset">
         <div class="footer-copyright">
-            {% if config.extra.footer.copyright %}
+            {% if config.footer.copyright %}
               <div class="md-copyright__highlight">
-                {{ config.extra.footer.copyright }}
+                {{ config.footer.copyright }}
               </div>
             {% endif %}
         </div>
         <div class="footer-lines footer-textstyle">
-            {% for line in config.extra.footer.lines %}
+            {% for line in config.footer.lines %}
             {{ line }}<br>
             {% endfor %}
         </div>
         <nav class="footer-nav footer-textstyle">
-            {% for item in config.extra.footer.links %}
+            {% for item in config.footer.links %}
             {% set title = item.name %}
             {% if not title and "//" in item.link %}
                 {% set _, url = item.link.split("//") %}
             {% endif %}
-            {% if not "//" in item.link %}
-                {% set link = config.site_url + item.link %}
-            {% else %}
-                {% set link = item.link %}
-            {% endif %}
             <a
-                href="{{ link }}"
+                href="{{ item.link }}"
+                target="_blank" rel="noopener"
                 title="{{ title | e }}"
                 class="md-footer-link"
             >
@@ -76,8 +72,9 @@
             {% endfor %}
         </nav>
         <div class="footer-license footer-textstyle">
-            {% set link = config.extra.footer.license.link %}
-            {% set logo = config.site_url + '/' + config.extra.footer.license.logo %}
+            {% set link = config.footer.license.link %}
+            {% set logo = config.site_url + '/' + config.footer.license.logo %}
+            {% set description = config.footer.license.description %}
             <p style="font-size: .8rem; margin-right: 20px;">{{ description }}</p>
             <a href="{{ link }}" target="_blank" rel="noopener">
                 <img src="{{ logo }}">
