@@ -54,13 +54,13 @@ extra:
           - "Grant Number 521466146"
       links: # can be relative or absolute. Relative links will be prepended the site_url value
           - name: Contact
-            link: /contact/
+            link: contact/
           - name: Imprint
-            link: /imprint/
+            link: imprint/
           - name: Privacy Policy
-            link: /privacy/
+            link: privacy/
           - name: Accessibility
-            link: /accessibility/
+            link: accessibility/
       license:
           description: This documentation is licensed under CC BY-SA 4.0
           link: https://creativecommons.org/licenses/by-sa/4.0/legalcode
@@ -89,25 +89,11 @@ plugins:
           glob:
               - googledocs/*
     - search
-    - awesome-pages
+    - awesome-nav
     # - git-revision-date-localized
     - macros:
         include_dir: ../include
         module_name: ../include/main
-nav:
-    - Overview: index.md
-    - About: about.md
-    - News: news.md
-    - Publications: publications.md
-    - Docs: docs.md
-    - Events: events.md
-    - People: people.md
-    - Contact: contact.md
-
-not_in_nav: |
-  accessibility.md
-  imprint.md
-  privacy.md
 
 validation: #recommended mkdocs validation settings 
   omitted_files: warn 
