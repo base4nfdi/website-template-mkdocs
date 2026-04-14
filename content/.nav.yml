@@ -1,0 +1,14 @@
+nav:
+    - Overview: index.md
+    - About: about.md
+    - News: news.md
+    - Publications: publications.md
+    - Docs: docs.md
+    - Events: events.md
+    - People: people.md
+    - Contact: contact.md
+
+not_in_nav: |
+  accessibility.md
+  imprint.md
+  privacy.md

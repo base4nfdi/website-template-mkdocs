@@ -1,6 +1,6 @@
 mkdocs
 mkdocs-material
-mkdocs-awesome-pages-plugin
+mkdocs-awesome-nav
 mkdocs-exclude
 mkdocs-git-revision-date-plugin
 mkdocs-macros-plugin
