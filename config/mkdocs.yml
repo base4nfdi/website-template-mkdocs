@@ -48,7 +48,7 @@ extra:
     #   - icon: images/cc-by-sa_icon.png
     #     link: https://codebase.helmholtz.cloud/m-team/nfdi/nfdi-aai-doc/
     footer:
-      copyright: "&copy 2024 TODO4NFDI, <a href='https://base4nfdi.de/'>Base4NFDI</a>"
+      copyright: "&copy 2024-2026 TODO4NFDI, <a href='https://base4nfdi.de/'>Base4NFDI</a>"
       lines: 
           - "Partially funded by DFG as part of NFDI."
           - "Grant Number 521466146"
